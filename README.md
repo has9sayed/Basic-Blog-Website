@@ -177,12 +177,4 @@ ordering = ('-created_at',)
 
 [MIT License](LICENSE)
 
-## Author
-
-**Your Name**  
-[Your GitHub](https://github.com/has9sayed)  
-[Your LinkedIn](https://www.linkedin.com/in/has9sayed)  
-
----
-
 *Feel free to contribute to this project by opening issues or submitting pull requests.*
