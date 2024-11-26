@@ -27,22 +27,6 @@ A simple blog website built with Django where users can create posts, comment on
 - Django Forms
 - Django Authentication
 
-## Project Structure
-```
-atom/
-├── core/
-│ ├── templates/core/
-│ │ ├── home.html # Homepage with posts
-│ │ ├── post_detail.html # Post and comments
-│ │ ├── login.html # User login
-│ │ └── register.html # User registration
-│ ├── models.py # Data models
-│ ├── views.py # View logic
-│ ├── forms.py # Form definitions
-│ └── urls.py # URL routing
-└── atom/
-└── settings.py # Project settings
-```
 
 ## Models
 
