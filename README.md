@@ -171,6 +171,5 @@ ordering = ('-created_at',)
 
 ## License
 
-[MIT License](LICENSE)
 
 *Feel free to contribute to this project by opening issues or submitting pull requests.*
