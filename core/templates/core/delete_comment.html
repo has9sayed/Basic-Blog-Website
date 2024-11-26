@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Comment</title>
+</head>
+<body>
+    <h1>Delete comment</h1>
+    <p>nigga, are u sure?</p>
+    <p>{{ comment.content }}</p>
+    <form action="" method="post">
+        {% csrf_token %}
+        <button type="submit">Yes, Delete that thang.</button>
+    </form>
+    <a href="{% url 'post_detail' comment.post.id %}">Cancel</a>
+</body>
+</html>
