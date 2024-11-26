@@ -46,7 +46,7 @@ atom/
 ## Models
 
 ### Post
-python
+```python
 class Comment(models.Model):
 post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
 user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -54,7 +54,7 @@ content = models.TextField()
 created_at = models.DateTimeField(auto_now_add=True)
 def str(self):
 return f'{self.user.username} - {self.content[:20]}'
-
+```
 
 ## Setup
 
@@ -62,18 +62,18 @@ Follow these steps to set up and run the project locally.
 
 ### 1. Clone the Repository
 
-bash
+```bash
 git clone https://github.com/your-username/atom.git
 cd atom
-
+```
 
 ### 2. Create a Virtual Environment
 
 It's recommended to use a virtual environment to manage dependencies.
 
-bash
+```bash
 python -m venv env
-
+```
 
 Activate the virtual environment:
 
@@ -88,35 +88,35 @@ Activate the virtual environment:
 
 ### 3. Install Dependencies
 
-bash
+```bash
 pip install -r requirements.txt
-
+```
 
 *If you don't have a `requirements.txt` file, you can install Django directly:*
 
-bash
+```bash
 pip install django
-
+```
 
 ### 4. Apply Migrations
 
-bash
+```bash
 python manage.py migrate
-
+```
 
 ### 5. Create a Superuser
 
 To access the Django admin panel, create a superuser account.
 
-bash
+```bash
 python manage.py createsuperuser
-
+```
 
 ### 6. Run the Development Server
 
-bash
+```bash
 python manage.py runserver
-
+```
 
 
 Open your browser and navigate to `http://127.0.0.1:8000/` to view the application.
@@ -146,7 +146,7 @@ Access the Django admin panel to manage users, posts, and comments.
 ### Registering Models in Admin
 
 
-python
+```python
 from django.contrib import admin
 from .models import Post, Comment
 @admin.register(Post)
@@ -160,7 +160,7 @@ list_display = ('content', 'user', 'post', 'created_at')
 list_filter = ('created_at', 'user')
 search_fields = ('content', 'userusername', 'post_title')
 ordering = ('-created_at',)
-
+```
 
 ## Future Improvements
 
